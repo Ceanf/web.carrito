@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+
+</head>
+
+<style>
+    .header {
+        background-color: #c2e3c1;
+        padding: 10px;
+        text-align: left;
+        display: flex;
+        justify-content: flex-end
+    }
+
+    .header img {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+
+    section header {
+        background-color: #c2e3c1;
+        padding: 50px;
+    }
+
+    .cart-container {
+        width: 60%;
+        height: 500px;
+        margin: 0;
+        margin-top: -400px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        
+    }
+
+    .cart-header {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .cart-item-img img {
+        float: left;
+        height: 150px;
+        width: 150px;
+
+    }
+
+    .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+    }
+
+    .cart-item-details {
+        width: 50%;
+    }
+
+    .cart-item-title {
+        font-weight: bold;
+    }
+
+    .cart-item-price {
+        font-size: 18px;
+        color: #cf0505;
+    }
+
+    .cart-item-quantity {
+        display: flex;
+        align-items: center;
+    }
+
+    .cart-item-quantity input {
+        width: 40px;
+        text-align: center;
+    }
+
+    .cart-total {
+        text-align: right;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    article img {
+        float: left;
+        height: 150px;
+        width: 150px;
+    }
+
+    article tr {
+        float: right;
+    }
+
+
+    .line-container {
+        position: relative;
+        height: 100px;
+    }
+
+    .half-width-line {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        border: 0;
+        border-top: 2px solid #000;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+    .continue-btn {
+        background-color: rgb(17, 45, 71);
+        width: 200px;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 100px;
+
+    }
+
+    .cart-sup {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: 20px auto;
+        background-color: #ffffffb9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        height: 1000px;
+    }
+
+    .detail-price {
+        width: 30%;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.596);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-left: 20px;
+        font-weight: bold;
+        margin-top: -800px;
+
+    }
+
+    .superior-cart {
+        width: 70%;
+        margin: 10px auto;
+        background-color: hsl(140, 43%, 99%);
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        
+    }
+</style>
+
+
+<body>
+
+    <div class="header">
+        <a href="#"><img src="img/552848.png" alt="Icono de perfil" /></a>
+        <a href="#"><img src="img/3144456.png" alt="Icono de carrito" /></a>
+    </div>
+
+    <div class="superior-cart">
+        <div class="cart-title"> <strong>Mi Carrito</strong></div>
+        <div>
+            <a href="#"> < Sigue comprando</a>
+        </div>
+
+    </div>
+    <hr>
+    <div>
+        <center> <strong>Envio gratis|</strong> Solo para pedidos mayores a S/.100 en Lima, Arequipa y Trujillo
+        </center>
+    </div>
+
+
+    <div class="cart-sup">
+
+        <div class="cart-container">
+
+            <div class="cart-item">
+                <div class="cart-item-details">
+                    <div class="cart-item-title">Cama Azul-Pets</div>
+                    <div class="cart-item-img">
+                        <a href="#"><img src="img/pets1.png" alt="Articulo"></a>
+                    </div>
+                    <div>Mpets MD005358</div>
+                    <div>Formato: Talla M</div>
+                    <div class="cart-item-price">S/. 200</div>
+                </div>
+                <div class="cart-item-quantity">
+                    <button type="submit">-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <div>S/.200</div>
+            </div>
+
+            <div class="cart-item">
+                <div class="cart-item-details">
+                    <div class="cart-item-title"> Arena para gato miau xd</div>
+                    <div class="cart-item-img">
+                        <a href="#"><img src="img/arena1.png" alt="Articulo"></a>
+                    </div>
+                    <div> Mpets MD005358</div>
+                    <div> Formato: Talla S</div>
+                    <div class="cart-item-price">S/. 90</div>
+                </div>
+                <div class="cart-item-quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+                <div>S/.180</div>
+            </div>
+
+        </div>
+
+        <div class="detail-price">
+            <div class="detail-title"> N°. Productos:</div>
+            <hr>
+            <div class="detail-title"> TOTAL: </div>
+            <button class="continue-btn">Continuar compra</button>
+
+        </div>
+
+    </div>
+
+    <footer> 
+        <a href="https://www.instagram.com/cesarchavzc/" target="_blank">
+            <img src="img/csr.jpg" alt="Instagram" style="width: 100px; height: 100px;">
+            <p>Instagram</p>
+        </a>
+        
+    
+    </footer>
+
+</body>
+
+</html>
